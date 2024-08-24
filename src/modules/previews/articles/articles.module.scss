@@ -1,0 +1,51 @@
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  align-items: flex-end;
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-inline: 1rem;
+    &--title {
+      font-size: 1.5rem !important;
+    }
+    &--more {
+      width: 6rem;
+      height: 3rem;
+      font-weight: 600 !important;
+      color: #1158a7 !important;
+    }
+  }
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 0;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    &--more {
+      width: 9rem;
+      height: 3rem;
+      border-color: #1158a7 !important;
+      margin-top: 1rem !important;
+      border-radius: 0.5rem !important;
+    }
+  }
+}

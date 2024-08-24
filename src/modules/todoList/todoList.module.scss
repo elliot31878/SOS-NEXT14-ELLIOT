@@ -1,0 +1,49 @@
+.todo-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  padding-top: 2rem;
+  align-items: center;
+  &__title {
+    font-size: 1.5rem !important;
+  }
+  &__header {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    &--input {
+      width: 30rem;
+      @media screen and (max-width: 800px) {
+        width: 80%;
+      }
+      div {
+        border-radius: 1rem;
+        height: 3.5rem;
+      }
+    }
+    &--button {
+      width: 10rem;
+      height: 3.5rem;
+      border-radius: 1rem !important;
+    }
+  }
+
+  &__todos {
+    width: 43rem;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+    @media screen and (max-width: 800px) {
+      width: 95%;
+    }
+  }
+}

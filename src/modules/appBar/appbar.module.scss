@@ -1,0 +1,39 @@
+.app-bar {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  position: fixed;
+  top: 0;
+  flex-direction: row-reverse;
+  background-color: #fff;
+  gap: 1rem;
+  z-index: 1;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  &__button {
+    background-color: #1158a7 !important;
+    border-radius: 0.5rem !important;
+    height: 3.5rem;
+    width: 11rem;
+    font-size: 1rem;
+    font-weight: 600 !important;
+  }
+  &__typo {
+    color: #1158a7 !important;
+    height: 3.5rem;
+    width: 10rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    @media screen and (max-width: 800px) {
+      display: none !important;
+    }
+    &--active {
+      transition: all 0.5s;
+      border-radius: 0.5rem !important;
+      background-color: rgb(244, 244, 244) !important;
+      border-bottom: 5px solid #39a711 !important;
+    }
+  }
+}

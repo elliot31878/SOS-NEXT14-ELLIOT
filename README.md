@@ -20,17 +20,44 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+# SOS NEXTJS APP SAMPLE
 
-To learn more about Next.js, take a look at the following resources:
+    This is simple app with next js i implement  test app for SOS company in this app i implement articles and todo list pages with CRUD actions in indexedDB
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+    pnpm i
+    npm run dev
+```
 
-## Deploy on Vercel
+## Articles Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Card View
+- Detail View
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Todo List
+
+- Add Todo
+- Delete Todo
+- Edit Todo
+- Search Todo
+
+## PACKAGES
+
+- idb (indexedDB)
+- redux
+- redux-saga
+- redux-toolkit
+- react-query (optional)
+- sass (BEM)
+- MUI
+- typescript
+
+* story book (don't implemented for own components)
+* jest testing (don't implemented test)
+* cypress (e2e) testing (don't implemented test)
+
+# API MOCK DATA
+
+    https://66c7562d732bf1b79fa639ff.mockapi.io/api/v1/dockters

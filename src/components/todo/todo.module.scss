@@ -1,0 +1,49 @@
+.todo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(200, 200, 200, 0.5);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-inline-start: 4px solid #1158a7;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    &--title {
+      @media screen and (max-width: 800px) {
+        width: 4em;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    gap: 1rem;
+
+    &--edit {
+      border-radius: 1rem !important;
+      height: 2rem;
+      width: 5rem;
+    }
+    &--delete {
+      border-radius: 1rem !important;
+      height: 2rem;
+      width: 5rem;
+    }
+  }
+  &__save {
+    border-radius: 1rem !important;
+    height: 2rem;
+    width: 5rem;
+  }
+  &__textfiled {
+    div {
+      border-radius: 1rem;
+      border-color: #1158a7;
+    }
+  }
+}
